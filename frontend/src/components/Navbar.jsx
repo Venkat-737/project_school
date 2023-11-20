@@ -11,7 +11,7 @@ export default function Navbar() {
       <nav className="justify-between bg-background font-poppins flex flex-row items-center  ${isActive('/')} ">
         <div className="logo">
           <img
-            src="https://picsum.photos/120/80?random=1"
+            src="https://picsum.photos/120/50?random=1"
             className="my-3 ml-6 mini:ml-16"
           />
         </div>

@@ -11,13 +11,14 @@ import DApps from "./pages/dapps.jsx";
 import Resources from "./pages/resources.jsx";
 import Getstarted from "./pages/getstarted.jsx";
 import TestEnv from "./pages/TestEnv.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <Login />
+      
       <Navbar />
       <div className="container">
         <Routes>
@@ -31,6 +32,8 @@ function App() {
           <Route path="/test" element={<TestEnv />} />
         </Routes>
       </div>
+      <Login />
+      <Footer/>
     </>
   );
 }

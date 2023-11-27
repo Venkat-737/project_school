@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import Login from "./pages/login.jsx";
+import Login from "./pages/Login.jsx";
 import Navbar from "./components/Navbar.jsx";
 import { Route, Routes } from "react-router-dom";
 import Developers from "./pages/developers.jsx";

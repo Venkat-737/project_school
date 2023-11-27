@@ -1,4 +1,4 @@
-import cardImage from "../assets/card-Image.png"
+import cardImage from "../assets/card-image.png"
 
 export default function Login() {
     return (

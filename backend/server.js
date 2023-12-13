@@ -6,6 +6,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import connectDB from "./config/db.js";
 import { errorHandler } from "./middleware/errorMiddleware.js";
+import problemRoutes from "./routes/problemRoutes.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -22,6 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 app.use("/api/codes", codeRoutes);
+app.use("/api/problems", problemRoutes);
 app.use(errorHandler);
 
 app.listen(port, () => {

@@ -12,6 +12,7 @@ import Resources from "./pages/resources.jsx";
 import Getstarted from "./pages/getstarted.jsx";
 import TestEnv from "./pages/TestEnv.jsx";
 import Footer from "./components/Footer.jsx";
+import CreateProblem from "./pages/createProblem.jsx";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -28,7 +29,9 @@ function App() {
           <Route path="/dapps" element={<DApps />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/getstarted" element={<Getstarted />} />
+          <Route path="/problem" element={<CreateProblem />} />
           <Route path="/test" element={<TestEnv />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
       <Footer />

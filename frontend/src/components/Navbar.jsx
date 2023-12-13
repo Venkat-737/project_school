@@ -49,10 +49,10 @@ export default function Navbar() {
             DApps
           </Link>
           <Link
-            to="/roadmap"
-            className={`${isActive("/roadmap")}  hover:text-primary transition`}
+            to="/problem"
+            className={`${isActive("/problem")}  hover:text-primary transition`}
           >
-            Roadmap
+            Problem
           </Link>
           <Link
             to="/resources"

@@ -18,7 +18,8 @@ export default {
         accent : '#a02f16',
         secondary :  '#e6e6e5',
         text : '#f0e3e3',
-        e14eca : "#e14eca"
+        e14eca : "#e14eca",
+        282828 : "#282828"
         
       },
       fontFamily: {

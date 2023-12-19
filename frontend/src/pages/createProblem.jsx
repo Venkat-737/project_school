@@ -1,28 +1,18 @@
-import React, { useEffect, useRef } from "react";
-import Quill from "quill";
-import "quill/dist/quill.snow.css";
+import React, { useState } from "react";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
 
-export default function CreateProblem() {
-  const wrapperRef = useRef(null);
-  const editorRef = useRef(null);
-  const quillInstanceRef = useRef(null);
+function Problem() {
+  const [value, setValue] = useState("");
 
-  useEffect(() => {
-    if (!wrapperRef.current || editorRef.current || quillInstanceRef.current)
-      return;
-
-    editorRef.current = document.createElement("div");
-    wrapperRef.current.appendChild(editorRef.current);
-
-    quillInstanceRef.current = new Quill(editorRef.current, { theme: "snow" });
-
-    return () => {
-      if (quillInstanceRef.current) {
-        quillInstanceRef.current = null; // Clear Quill instance reference
-        editorRef.current.remove();
-      }
-    };
-  }, []);
-
-  return <div id="container" ref={wrapperRef}></div>;
+  return (
+    <>
+      <div className="px-6 py-4">
+        <h1>Hello</h1>
+        <ReactQuill theme="snow" value={value} onChange={setValue} />
+      </div>
+    </>
+  );
 }
+
+export default Problem;
